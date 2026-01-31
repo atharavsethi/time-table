@@ -1,0 +1,229 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height:100%;}
+   body {
+    background-image: url("backgoundimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.bg img {     
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== NAVBAR (COURSE, BATCH, DAY) ===== */
+
+.COURSEDIV {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    background: rgba(148, 165, 203, 0.3);
+    backdrop-filter: blur(10px);
+
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 4px;
+
+    width: 90%;
+    padding: 2px;
+}
+
+.COURSE, .batch, .day {
+    height: 32px;
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 14px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+
+    padding: 4px 8px;
+    outline: none;
+    text-align: center;
+}
+
+/* ========================================================= */
+/* BASE TIMETABLE STYLE — applies to ALL branches and ALL days */
+/* ========================================================= */
+
+.mondaycs1a, .tuesdaycs1a, .wednesdaycs1a, .thursdaycs1a, .fridaycs1a,
+.mondaycs1b, .tuesdaycs1b, .wednesdaycs1b, .thursdaycs1b, .fridaycs1b,
+.mondaydsai, .tuesdaydsai, .wednesdaydsai, .thursdaydsai, .fridaydsai,
+.mondayece, .tuesdayece, .wednesdayece, .thursdayece, .fridayece {
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    background: rgba(100, 200, 150, 0.09);
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 75%;
+}
+
+/* PROF CARD STYLE (same for all branches) */
+
+.mondaycs1a .prof, .tuesdaycs1a .prof, .wednesdaycs1a .prof, .thursdaycs1a .prof, .fridaycs1a .prof,
+.mondaycs1b .prof, .tuesdaycs1b .prof, .wednesdaycs1b .prof, .thursdaycs1b .prof, .fridaycs1b .prof,
+.mondaydsai .prof, .tuesdaydsai .prof, .wednesdaydsai .prof, .thursdaydsai .prof, .fridaydsai .prof,
+.mondayece .prof, .tuesdayece .prof, .wednesdayece .prof, .thursdayece .prof, .fridayece .prof {
+    text-align: center;
+    gap: 7px;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    background: rgba(100, 255, 144, 0.10);
+    padding: 10px;
+    position: relative;
+    width: 70%;
+    left: 18px;
+    bottom: 7px;
+}
+
+/* TIME & SUBJECT FORMATTING */
+
+.info {
+    display: flex;
+    gap: 3px;
+}
+
+.subject::before {
+    content: "";
+    background: red;
+    position: absolute;
+}
+
+/* ========================================================= */
+/* MEDIA QUERIES — FIXED AND APPLIED TO ALL TIMETABLES       */
+/* ========================================================= */
+
+/* ===== TABLETS (1024px) ===== */
+@media (max-width: 1024px) {
+
+    .COURSEDIV {
+        top: 18px;
+        gap: 10px;
+    }
+
+    .COURSE, .batch, .day {
+        height: 30px;
+        font-size: 13px;
+        min-width: 90px;
+    }
+
+    /* Timetable scaling */
+    .mondaycs1a, .tuesdaycs1a, .wednesdaycs1a, .thursdaycs1a, .fridaycs1a,
+    .mondaycs1b, .tuesdaycs1b, .wednesdaycs1b, .thursdaycs1b, .fridaycs1b,
+    .mondaydsai, .tuesdaydsai, .wednesdaydsai, .thursdaydsai, .fridaydsai,
+    .mondayece, .tuesdayece, .wednesdayece, .thursdayece, .fridayece {
+        width: 85%;
+        left: 40px;
+    }
+}
+
+/* ===== BIG PHONES / MINI TABLETS (768px) ===== */
+@media (max-width: 768px) {
+    /* ===== MOBILE BACKGROUND FIX (BEST SOLUTION) ===== */
+@media (max-width: 768px) {
+    body {
+        background-image: url("mobile.png"); /* vertical image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        min-height: 100dvh; /* prevents white bottom */
+    }
+}
+
+
+
+
+
+    .COURSEDIV {
+        top: 16px;
+        gap: 8px;
+        width: 95%;
+    }
+
+    .COURSE, .batch, .day {
+        height: 28px;
+        font-size: 12px;
+        min-width: 85px;
+    }
+
+    /* Timetable scaling */
+    .mondaycs1a, .tuesdaycs1a, .wednesdaycs1a, .thursdaycs1a, .fridaycs1a,
+    .mondaycs1b, .tuesdaycs1b, .wednesdaycs1b, .thursdaycs1b, .fridaycs1b,
+    .mondaydsai, .tuesdaydsai, .wednesdaydsai, .thursdaydsai, .fridaydsai,
+    .mondayece, .tuesdayece, .wednesdayece, .thursdayece, .fridayece {
+        width: 90%;
+        left: 20px;
+    }
+
+    .prof {
+        width: 80%;
+        left: 10px;
+    }
+}
+
+/* ===== MOBILE PHONES (600px) ===== */
+@media (max-width: 600px) {
+/* ===== MOBILE BACKGROUND FIX (BEST SOLUTION) ===== */
+@media (max-width: 768px) {
+    body {
+        background-image: url("backgoundimage.png");
+         /* vertical image */
+         
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 100dvh; /* prevents white bottom */
+    }
+}
+
+
+
+
+    .COURSEDIV {
+        top: 12px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+        width: 98%;
+    }
+
+    .COURSE, .batch, .day {
+        height: 26px;
+        font-size: 11px;
+        min-width: 80px;
+        width: 30%;
+        padding: 3px 6px;
+    }
+
+    /* Timetable scaling */
+    .mondaycs1a, .tuesdaycs1a, .wednesdaycs1a, .thursdaycs1a, .fridaycs1a,
+    .mondaycs1b, .tuesdaycs1b, .wednesdaycs1b, .thursdaycs1b, .fridaycs1b,
+    .mondaydsai, .tuesdaydsai, .wednesdaydsai, .thursdaydsai, .fridaydsai,
+    .mondayece, .tuesdayece, .wednesdayece, .thursdayece, .fridayece {
+        width: 94%;
+        left: 10px;
+    }
+
+    .prof {
+        width: 85%;
+        left: 5px;
+    }
+}
+
+

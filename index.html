@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg">
+        <img src="backgoundimage.png">
+    </div>
+
+    <!-- SELECTS -->
+    <div class="COURSEDIV">
+        <select class="COURSE" id="course">
+            <option disabled selected>Courses</option>
+            <option value="cse">cse</option>
+            <option value="dsai">dsai</option>
+            <option value="ece">ece</option>
+        </select>
+        
+        <select class="batch" id="batch">
+            <option disabled selected>Batch</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+
+        <select class="day" id="dayselect">
+            <option disabled selected>Day</option>
+            <option value="m">Monday</option>
+            <option value="t">Tuesday</option>
+            <option value="w">Wednesday</option>
+            <option value="thur">Thursday</option>
+            <option value="f">Friday</option>
+        </select>
+    </div>
+<!-- <div id="content"></div> -->
+
+    <!-- ================= MONDAY ================= -->
+    <div class="mondaycs1a">
+        <ul><li>MONDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">A1</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">HSS Basket</span>
+            <div class="info"><span class="time">11:30–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture (CSE-A)</span>
+            <div class="info"><span class="time">14:00–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">D2-T</span>
+            <div class="info"><span class="time">17:30–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= TUESDAY ================= -->
+    <div class="tuesdaycs1a">
+        <ul><li>TUESDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-B)</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra</span>
+            <div class="info"><span class="time">11:30–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture (CSE-A)</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2-T</span>
+            <div class="info"><span class="time">17:30–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= WEDNESDAY ================= -->
+    <div class="wednesdaycs1a">
+        <ul><li>WEDNESDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-A & B)</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Mathematical Foundations of Computing</span>
+            <div class="info"><span class="time">14:00–15:30</span></div>
+        </div>
+
+    
+
+        <div class="prof">
+            <span class="subject">HSS Basket</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= THURSDAY ================= -->
+    <div class="thursdaycs1a">
+        <ul><li>THURSDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">L7</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">L8</span>
+            <div class="info"><span class="time">10:00–10:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture Lab (CSE-A)</span>
+            <div class="info"><span class="time">10:30–12:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">L14</span>
+            <div class="info"><span class="time">13:30–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Mathematical Foundations of Computing</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">U</span>
+            <div class="info"><span class="time">17:10–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= FRIDAY ================= -->
+    <div class="fridaycs1a">
+        <ul><li>FRIDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">E1</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-A)</span>
+            <div class="info"><span class="time">10:30–12:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">C1-T</span>
+            <div class="info"><span class="time">12:15–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2</span>
+            <div class="info"><span class="time">14:30–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra-T</span>
+            <div class="info"><span class="time">16:00–17:10</span></div>
+        </div>
+    </div>
+
+
+        <!-- /////////////////
+
+        ///       for cse B
+
+                //// -->
+
+        <div class="mondaycs1b">
+        <ul><li>MONDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">A1</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">HSS Basket</span>
+            <div class="info"><span class="time">11:30–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture (CSE-A)</span>
+            <div class="info"><span class="time">14:00–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">D2-T</span>
+            <div class="info"><span class="time">17:30–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= TUESDAY ================= -->
+    <div class="tuesdaycs1b">
+        <ul><li>TUESDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-B)</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra</span>
+            <div class="info"><span class="time">11:30–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture (CSE-A)</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2-T</span>
+            <div class="info"><span class="time">17:30–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= WEDNESDAY ================= -->
+    <div class="wednesdaycs1b">
+        <ul><li>WEDNESDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-A & B)</span>
+            <div class="info"><span class="time">10:00–11:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Mathematical Foundations of Computing</span>
+            <div class="info"><span class="time">14:00–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">HSS Basket</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= THURSDAY ================= -->
+    <div class="thursdaycs1b">
+        <ul><li>THURSDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">L7</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">L8</span>
+            <div class="info"><span class="time">10:00–10:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Computer Architecture Lab (CSE-A)</span>
+            <div class="info"><span class="time">10:30–12:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">L14</span>
+            <div class="info"><span class="time">13:30–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Mathematical Foundations of Computing</span>
+            <div class="info"><span class="time">15:40–17:10</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">U</span>
+            <div class="info"><span class="time">17:10–18:30</span></div>
+        </div>
+    </div>
+
+
+    <!-- ================= FRIDAY ================= -->
+    <div class="fridaycs1b">
+        <ul><li>FRIDAY</li></ul>
+
+        <div class="prof">
+            <span class="subject">E1</span>
+            <div class="info"><span class="time">09:00–10:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">DSA (CSE-A)</span>
+            <div class="info"><span class="time">10:30–12:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">C1-T</span>
+            <div class="info"><span class="time">12:15–13:00</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">E2</span>
+            <div class="info"><span class="time">14:30–15:30</span></div>
+        </div>
+
+        <div class="prof">
+            <span class="subject">Linear Algebra-T</span>
+            <div class="info"><span class="time">16:00–17:10</span></div>
+        </div>
+    </div>
+
+
+
+        <!-- ////////
+/////////    for dsai 
+///////////
+        
+///////// -->
+
+
+
+<!-- =============== MONDAY =============== -->
+<div class="mondaydsai">
+    <ul><li>MONDAY</li></ul>
+
+    <div class="prof"><span class="subject">Data Curation Lab</span>
+        <div class="info"><span class="time">09:00–10:00</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms</span>
+        <div class="info"><span class="time">10:45–12:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Linear Algebra</span>
+        <div class="info"><span class="time">14:00–15:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Open Elective</span>
+        <div class="info"><span class="time">16:00–17:10</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">DCT-T</span>
+        <div class="info"><span class="time">17:30–18:30</span></div>
+    </div>
+</div>
+
+
+<!-- =============== TUESDAY =============== -->
+<div class="tuesdaydsai">
+    <ul><li>TUESDAY</li></ul>
+
+    <div class="prof"><span class="subject">Optimization</span>
+        <div class="info"><span class="time">09:00–10:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">DSA Lab + DSA</span>
+        <div class="info"><span class="time">11:00–13:15</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Linear Algebra</span>
+        <div class="info"><span class="time">15:40–17:10</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">OE-T</span>
+        <div class="info"><span class="time">17:30–18:30</span></div>
+    </div>
+</div>
+
+
+<!-- =============== WEDNESDAY =============== -->
+<div class="wednesdaydsai">
+    <ul><li>WEDNESDAY</li></ul>
+
+    <div class="prof"><span class="subject">HSS / Innovation & Entrepreneurship</span>
+        <div class="info"><span class="time">09:00–10:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms</span>
+        <div class="info"><span class="time">10:45–12:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Optimization-T</span>
+        <div class="info"><span class="time">12:15–13:15</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Data Curation Techniques</span>
+        <div class="info"><span class="time">15:40–17:10</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">LA-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div>
+    </div>
+</div>
+
+
+<!-- =============== THURSDAY =============== -->
+<div class="thursdaydsai">
+    <ul><li>THURSDAY</li></ul>
+
+    <div class="prof"><span class="subject">HSS / Innovation & Entrepreneurship</span>
+        <div class="info"><span class="time">10:00–10:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms Lab</span>
+        <div class="info"><span class="time">10:30–12:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Optimization</span>
+        <div class="info"><span class="time">15:40–17:10</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">HSS / Innovation-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div>
+    </div>
+</div>
+
+
+<!-- =============== FRIDAY =============== -->
+<div class="fridaydsai">
+    <ul><li>FRIDAY</li></ul>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms</span>
+        <div class="info"><span class="time">09:00–10:00</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Open Elective</span>
+        <div class="info"><span class="time">10:30–13:00</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">Data Curation Techniques</span>
+        <div class="info"><span class="time">14:00–15:30</span></div>
+    </div>
+
+    <div class="prof"><span class="subject">LA-T</span>
+        <div class="info"><span class="time">16:00–17:10</span></div>
+    </div>
+</div>
+
+
+
+<!-- /////
+/
+
+
+/
+/ for ece
+/
+
+/
+/ -->
+
+<!-- =============== MONDAY (ECE) =============== -->
+<div class="mondayece">
+    <ul><li>MONDAY</li></ul>
+
+    <div class="prof"><span class="subject">A1</span>
+        <div class="info"><span class="time">09:00–10:30</span></div></div>
+
+    <div class="prof"><span class="subject">Computer Architecture - Lab</span>
+        <div class="info"><span class="time">10:30–11:00</span></div></div>
+
+    <div class="prof"><span class="subject">E1</span>
+        <div class="info"><span class="time">11:00–12:15</span></div></div>
+
+    <div class="prof"><span class="subject">Network Analysis</span>
+        <div class="info"><span class="time">14:00–15:30</span></div></div>
+
+    <div class="prof"><span class="subject">Open Elective</span>
+        <div class="info"><span class="time">15:40–17:10</span></div></div>
+
+    <div class="prof"><span class="subject">D2-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div></div>
+
+    <div class="prof"><span class="subject">A3</span>
+        <div class="info"><span class="time">18:30 onwards</span></div></div>
+</div>
+
+
+<!-- =============== TUESDAY (ECE) =============== -->
+<div class="tuesdayece">
+    <ul><li>TUESDAY</li></ul>
+
+    <div class="prof"><span class="subject">Optimization</span>
+        <div class="info"><span class="time">09:00–10:45</span></div></div>
+
+    <div class="prof"><span class="subject">A1</span>
+        <div class="info"><span class="time">11:00–13:15</span></div></div>
+
+    <div class="prof"><span class="subject">Computer Architecture</span>
+        <div class="info"><span class="time">14:00–15:30</span></div></div>
+
+    <div class="prof"><span class="subject">Network Analysis</span>
+        <div class="info"><span class="time">16:00–17:10</span></div></div>
+
+    <div class="prof"><span class="subject">OE-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div></div>
+
+    <div class="prof"><span class="subject">Introduction to Sensor Technology - Lab</span>
+        <div class="info"><span class="time">18:30–19:30</span></div></div>
+</div>
+
+
+<!-- =============== WEDNESDAY (ECE) =============== -->
+<div class="wednesdayece">
+    <ul><li>WEDNESDAY</li></ul>
+
+    <div class="prof"><span class="subject">HSS / I&E</span>
+        <div class="info"><span class="time">09:00–10:45</span></div></div>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms</span>
+        <div class="info"><span class="time">10:45–14:00</span></div></div>
+
+    <div class="prof"><span class="subject">D2</span>
+        <div class="info"><span class="time">15:40–17:10</span></div></div>
+
+    <div class="prof"><span class="subject">A2-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div></div>
+
+    <div class="prof"><span class="subject">A3-T / B3-T</span>
+        <div class="info"><span class="time">18:30 onwards</span></div></div>
+</div>
+
+
+<!-- =============== THURSDAY (ECE) =============== -->
+<div class="thursdayece">
+    <ul><li>THURSDAY</li></ul>
+
+    <div class="prof"><span class="subject">Data Structures & Algorithms</span>
+        <div class="info"><span class="time">09:00–11:45</span></div></div>
+
+    <div class="prof"><span class="subject">HSS / I&E</span>
+        <div class="info"><span class="time">11:45–13:15</span></div></div>
+
+    <div class="prof"><span class="subject">Optimization-T</span>
+        <div class="info"><span class="time">13:15–14:00</span></div></div>
+
+    <div class="prof"><span class="subject">D2</span>
+        <div class="info"><span class="time">14:00–15:30</span></div></div>
+
+    <div class="prof"><span class="subject">B2-T</span>
+        <div class="info"><span class="time">17:10–18:30</span></div></div>
+
+    <div class="prof"><span class="subject">B3</span>
+        <div class="info"><span class="time">18:30 onwards</span></div></div>
+</div>
+
+
+<!-- =============== FRIDAY (ECE) =============== -->
+<div class="fridayece">
+    <ul><li>FRIDAY</li></ul>
+
+    <div class="prof"><span class="subject">E1</span>
+        <div class="info"><span class="time">09:00–11:00</span></div></div>
+
+    <div class="prof"><span class="subject">Optimization</span>
+        <div class="info"><span class="time">12:15–14:00</span></div></div>
+
+    <div class="prof"><span class="subject">HSS / I&E - T</span>
+        <div class="info"><span class="time">14:00–15:30</span></div></div>
+
+    <div class="prof"><span class="subject">Open Elective</span>
+        <div class="info"><span class="time">15:30–17:10</span></div></div>
+
+    <div class="prof"><span class="subject">Computer Architecture</span>
+        <div class="info"><span class="time">17:10–18:30</span></div></div>
+
+    <div class="prof"><span class="subject">B3</span>
+        <div class="info"><span class="time">18:30 onwards</span></div></div>
+</div>
+
+
+
+
+    <script src="jav.js"></script>
+    
+</body>
+</html>
+
+
